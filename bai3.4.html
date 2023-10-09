@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkSoNguyenDuong(number) {
+            if (number > 0 && Number.isInteger(number)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Nhập số từ người dùng và kiểm tra
+        let input = parseFloat(prompt("Nhập số:"));
+        let laSoNguyenDuong = checkSoNguyenDuong(input);
+
+        console.log(laSoNguyenDuong);
+    </script>
+</body>
+
+</html>

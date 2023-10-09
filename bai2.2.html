@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //hàm tính diện thích hình tròn
+        function dienTichHinhTron(r) {
+            return 3.14 * r** 2;
+        }
+
+        // Hàm tính chu vi hình tròn
+        function chuViHinhTron(r) {
+            return 2 * 3.14 * r;
+        }
+
+        // Gọi hàm
+        let r =+prompt("mời nhập bán kính")
+        let dienTich = dienTichHinhTron(r);
+        let chuVi = chuViHinhTron(r);
+
+        console.log(`Diện tích hình tròn có bán kính ${r} là: ${dienTich}`);
+        console.log(`Chu vi hình tròn có bán kính  ${r}  là: ${chuVi}`);
+    </script>
+</body>
+
+</html>

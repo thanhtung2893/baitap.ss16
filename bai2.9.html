@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //tạo hàm
+        function kiemTra(arr, x) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === x) {
+                    count++;
+                }
+            }
+            if (count > 0) {
+                return count;
+            } else {
+                return -1;
+            }
+        }
+        //gọi hàm
+        let arr = ['a', 'b', 'c', 'd', 'a', 'e'];
+        let timX = 'b';
+        let n = kiemTra(arr, timX);
+        console.log(`Ký tự '${timX}' xuất hiện ${n} lần.`);
+    </script>
+</body>
+
+</html>

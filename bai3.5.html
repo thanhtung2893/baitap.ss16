@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doiCho(a, b) {
+  let temp = a;
+  a = b;
+  b = temp;
+  console.log('Sau khi đổi chỗ: a =', a, ', b =', b);
+}
+
+// Sử dụng hàm đổi chỗ
+let x = 5;
+let y = 10;
+
+console.log('Trước khi đổi chỗ: x =', x, ', y =', y);
+doiCho(x, y);
+    </script>
+</body>
+</html>

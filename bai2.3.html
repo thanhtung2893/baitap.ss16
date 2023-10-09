@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //hàm tính giai thừa
+        function tinhGiaiThua(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * tinhGiaiThua(n - 1);
+            }
+        }
+
+        // Gọi hàm
+        let so = +prompt("mời nhập số");
+        let giaiThua = tinhGiaiThua(so);
+
+        console.log(`Giai thừa của ${so} là ${giaiThua} `);
+    </script>
+</body>
+
+</html>

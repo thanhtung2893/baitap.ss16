@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let chomSao = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        function timChomSao(tenNgoiSao) {
+            for (let i = 0; i < ngoiSao.length; i++) {
+                if (ngoiSao[i] === tenNgoiSao) {
+                    return chomSao[i];
+                }
+            }
+            return ""; 
+        }
+        let tenNgoiSao = prompt("Nhập tên của ngôi sao:");
+        let tim = timChomSao(ngoiSao);
+        if (chomSao) {
+            console.log(`Ngôi sao "${ngoiSao}" thuộc chòm sao "${chomSao}".`);
+        } else {
+            console.log(`Không tìm thấy thông tin về ngôi sao "${ngoiSao}".`);
+        }
+    </script>
+</body>
+
+</html>

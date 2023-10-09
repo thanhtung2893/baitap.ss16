@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // diện tích
+        function tinhDienTichHinhTron(banKinh) {
+            let dienTich = 3.14 * banKinh * banKinh;
+            return dienTich;
+        }
+
+        //chu vi
+        function tinhChuViHinhTron(banKinh) {
+            let chuVi = 2 * 3.14 * banKinh;
+            return chuVi;
+        }
+
+        
+        let banKinh = 5; 
+        let dienTich = tinhDienTichHinhTron(banKinh);
+        let chuVi = tinhChuViHinhTron(banKinh);
+
+        console.log("Diện tích hình tròn: " + dienTich);
+        console.log("Chu vi hình tròn: " + chuVi);
+    </script>
+</body>
+
+</html>
